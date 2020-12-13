@@ -1,285 +1,589 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5fcc8fb9-aa7d-4870-a0fa-af5136886963">
-  <producedTypes>
-    <objectType typeId="65ec8627-97f8-40dd-959c-704a1b904a01" valueTypeId="cfc2412e-0ced-4e1e-8b65-17949d667718"/>
-    <refType typeId="7f30b2bb-c43f-4310-9ca2-db4c0fb09f5b" valueTypeId="4699cad2-e21c-4923-b33b-74e92e3c4ce6"/>
-    <selectionType typeId="41ee0eb5-2eca-4936-bb5c-208dd2bb9902" valueTypeId="94032dc6-d629-48c2-abea-969ea1554695"/>
-    <listType typeId="ea336510-32e4-438f-a65e-52899e07248b" valueTypeId="cb416da1-1959-472f-b70f-967de4c33db4"/>
-    <managerType typeId="2d4912f5-7ef4-4a5e-aacf-4497b0f6ddc7" valueTypeId="4af6f70b-f8be-482a-8b0e-3eaf2b529a77"/>
-  </producedTypes>
-  <name>StockAdjustmentAsSurplus</name>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5fcc8fb9-aa7d-4870-a0fa-af5136886963">
+ <producedTypes>
+  <objectType typeId="65ec8627-97f8-40dd-959c-704a1b904a01" valueTypeId="cfc2412e-0ced-4e1e-8b65-17949d667718"/>
+  <refType typeId="7f30b2bb-c43f-4310-9ca2-db4c0fb09f5b" valueTypeId="4699cad2-e21c-4923-b33b-74e92e3c4ce6"/>
+  <selectionType typeId="41ee0eb5-2eca-4936-bb5c-208dd2bb9902" valueTypeId="94032dc6-d629-48c2-abea-969ea1554695"/>
+  <listType typeId="ea336510-32e4-438f-a65e-52899e07248b" valueTypeId="cb416da1-1959-472f-b70f-967de4c33db4"/>
+  <managerType typeId="2d4912f5-7ef4-4a5e-aacf-4497b0f6ddc7" valueTypeId="4af6f70b-f8be-482a-8b0e-3eaf2b529a77"/>
+ </producedTypes>
+ <name>StockAdjustmentAsSurplus</name>
+ <synonym>
+  <key>en</key>
+  <value>Stock adjustment as surplus</value>
+ </synonym>
+ <useStandardCommands>true</useStandardCommands>
+ <inputByString>Document.StockAdjustmentAsSurplus.StandardAttribute.Number</inputByString>
+ <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+ <characteristics>
+  <characteristicTypes>Catalog.AddAttributeAndPropertySets.TabularSection.Properties</characteristicTypes>
+  <keyField>Catalog.AddAttributeAndPropertySets.TabularSection.Properties.Attribute.Property</keyField>
+  <typesFilterField>Catalog.AddAttributeAndPropertySets.TabularSection.Properties.StandardAttribute.Ref</typesFilterField>
+  <typesFilterValue xsi:type="core:ReferenceValue">
+   <value>Catalog.AddAttributeAndPropertySets.Document_StockAdjustmentAsSurplus</value>
+  </typesFilterValue>
+  <characteristicValues>InformationRegister.AddProperties</characteristicValues>
+  <objectField>InformationRegister.AddProperties.Dimension.Object</objectField>
+  <typeField>InformationRegister.AddProperties.Dimension.Property</typeField>
+  <valueField>InformationRegister.AddProperties.Resource.Value</valueField>
+ </characteristics>
+ <characteristics>
+  <characteristicTypes>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes</characteristicTypes>
+  <keyField>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes.Attribute.Attribute</keyField>
+  <typesFilterField>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes.StandardAttribute.Ref</typesFilterField>
+  <typesFilterValue xsi:type="core:ReferenceValue">
+   <value>Catalog.AddAttributeAndPropertySets.Document_StockAdjustmentAsSurplus</value>
+  </typesFilterValue>
+  <characteristicValues>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes</characteristicValues>
+  <objectField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.StandardAttribute.Ref</objectField>
+  <typeField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.Attribute.Property</typeField>
+  <valueField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.Attribute.Value</valueField>
+ </characteristics>
+ <createOnInput>DontUse</createOnInput>
+ <dataLockControlMode>Managed</dataLockControlMode>
+ <fullTextSearch>Use</fullTextSearch>
+ <listPresentation>
+  <key>en</key>
+  <value>Stock adjustments as surplus</value>
+ </listPresentation>
+ <numberLength>12</numberLength>
+ <numberAllowedLength>Variable</numberAllowedLength>
+ <checkUnique>true</checkUnique>
+ <autonumbering>true</autonumbering>
+ <defaultObjectForm>Document.StockAdjustmentAsSurplus.Form.DocumentForm</defaultObjectForm>
+ <defaultListForm>Document.StockAdjustmentAsSurplus.Form.ListForm</defaultListForm>
+ <defaultChoiceForm>Document.StockAdjustmentAsSurplus.Form.ChoiceForm</defaultChoiceForm>
+ <realTimePosting>Deny</realTimePosting>
+ <registerRecords>AccumulationRegister.StockAdjustmentAsSurplus</registerRecords>
+ <registerRecords>AccumulationRegister.InventoryBalance</registerRecords>
+ <registerRecords>AccumulationRegister.StockReservation</registerRecords>
+ <registerRecords>AccumulationRegister.RevenuesTurnovers</registerRecords>
+ <registerRecords>AccumulationRegister.StockBalance</registerRecords>
+ <postInPrivilegedMode>true</postInPrivilegedMode>
+ <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+ <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+ <attributes uuid="5b799080-8aeb-4ddf-a493-e187e470a3dd">
+  <name>Company</name>
   <synonym>
-    <key>en</key>
-    <value>Stock adjustment as surplus</value>
+   <key>en</key>
+   <value>Company</value>
   </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.StockAdjustmentAsSurplus.StandardAttribute.Number</inputByString>
-  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
-  <characteristics>
-    <characteristicTypes>Catalog.AddAttributeAndPropertySets.TabularSection.Properties</characteristicTypes>
-    <keyField>Catalog.AddAttributeAndPropertySets.TabularSection.Properties.Attribute.Property</keyField>
-    <typesFilterField>Catalog.AddAttributeAndPropertySets.TabularSection.Properties.StandardAttribute.Ref</typesFilterField>
-    <typesFilterValue xsi:type="core:ReferenceValue">
-      <value>Catalog.AddAttributeAndPropertySets.Document_StockAdjustmentAsSurplus</value>
-    </typesFilterValue>
-    <characteristicValues>InformationRegister.AddProperties</characteristicValues>
-    <objectField>InformationRegister.AddProperties.Dimension.Object</objectField>
-    <typeField>InformationRegister.AddProperties.Dimension.Property</typeField>
-    <valueField>InformationRegister.AddProperties.Resource.Value</valueField>
-  </characteristics>
-  <characteristics>
-    <characteristicTypes>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes</characteristicTypes>
-    <keyField>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes.Attribute.Attribute</keyField>
-    <typesFilterField>Catalog.AddAttributeAndPropertySets.TabularSection.Attributes.StandardAttribute.Ref</typesFilterField>
-    <typesFilterValue xsi:type="core:ReferenceValue">
-      <value>Catalog.AddAttributeAndPropertySets.Document_StockAdjustmentAsSurplus</value>
-    </typesFilterValue>
-    <characteristicValues>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes</characteristicValues>
-    <objectField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.StandardAttribute.Ref</objectField>
-    <typeField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.Attribute.Property</typeField>
-    <valueField>Document.StockAdjustmentAsSurplus.TabularSection.AddAttributes.Attribute.Value</valueField>
-  </characteristics>
-  <createOnInput>DontUse</createOnInput>
-  <dataLockControlMode>Managed</dataLockControlMode>
+  <type>
+   <types>CatalogRef.Companies</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <fillChecking>ShowError</fillChecking>
+  <fillValue xsi:type="core:UndefinedValue"/>
   <fullTextSearch>Use</fullTextSearch>
-  <listPresentation>
+  <dataHistory>Use</dataHistory>
+  <synonym>
+   <key>ru</key>
+   <value>Организация</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Şirket</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Organisation</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Entreprise</value>
+  </synonym>
+ </attributes>
+ <attributes uuid="28b47246-0308-42f6-8bb7-80b83f84a7ec">
+  <name>Store</name>
+  <synonym>
+   <key>en</key>
+   <value>Store</value>
+  </synonym>
+  <type>
+   <types>CatalogRef.Stores</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <fillChecking>ShowError</fillChecking>
+  <fillValue xsi:type="core:UndefinedValue"/>
+  <fullTextSearch>Use</fullTextSearch>
+  <dataHistory>Use</dataHistory>
+  <synonym>
+   <key>ru</key>
+   <value>Склад</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Depo</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Lager</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Entrepôt</value>
+  </synonym>
+ </attributes>
+ <forms uuid="3d46ecbd-c6e0-4c42-9981-ff9c876e9c5b">
+  <name>DocumentForm</name>
+  <synonym>
+   <key>en</key>
+   <value>Document form</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <synonym>
+   <key>ru</key>
+   <value>Форма документа</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Evrak formu</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Dokumentformular</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Formulaire de document</value>
+  </synonym>
+ </forms>
+ <forms uuid="e6d376a5-fb4e-4c35-bd59-e86bdb3e0074">
+  <name>ListForm</name>
+  <synonym>
+   <key>en</key>
+   <value>List form</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <synonym>
+   <key>ru</key>
+   <value>Форма списка</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Liste formu</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Listenformular</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Formulaire de liste</value>
+  </synonym>
+ </forms>
+ <forms uuid="889fa7f0-d60b-478a-bdac-11ee180d95c6">
+  <name>ChoiceForm</name>
+  <synonym>
+   <key>en</key>
+   <value>Choice form</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <synonym>
+   <key>ru</key>
+   <value>Форма выбора</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Seçim formu</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Auswahlformular</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Formulaire de sélection</value>
+  </synonym>
+ </forms>
+ <tabularSections uuid="5501341b-0832-4c9b-bf38-9af1afe37b29">
+  <producedTypes>
+   <objectType typeId="19af985c-f741-4c68-bf22-4a3e26c01e2a" valueTypeId="d90256a7-23b8-482a-82a5-f438f67aa2bf"/>
+   <rowType typeId="d6871627-0324-4c9f-87f6-8566cd74c2b3" valueTypeId="2f6d86dd-d719-4d40-a9eb-ee1b128b3863"/>
+  </producedTypes>
+  <name>ItemList</name>
+  <synonym>
+   <key>en</key>
+   <value>Item list</value>
+  </synonym>
+  <attributes uuid="ba101878-8d5c-4568-8c05-8ebd3015c069">
+   <name>Key</name>
+   <synonym>
     <key>en</key>
-    <value>Stock adjustments as surplus</value>
-  </listPresentation>
-  <numberLength>12</numberLength>
-  <numberAllowedLength>Variable</numberAllowedLength>
-  <checkUnique>true</checkUnique>
-  <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.StockAdjustmentAsSurplus.Form.DocumentForm</defaultObjectForm>
-  <defaultListForm>Document.StockAdjustmentAsSurplus.Form.ListForm</defaultListForm>
-  <defaultChoiceForm>Document.StockAdjustmentAsSurplus.Form.ChoiceForm</defaultChoiceForm>
-  <realTimePosting>Deny</realTimePosting>
-  <registerRecords>AccumulationRegister.StockAdjustmentAsSurplus</registerRecords>
-  <registerRecords>AccumulationRegister.InventoryBalance</registerRecords>
-  <registerRecords>AccumulationRegister.StockReservation</registerRecords>
-  <registerRecords>AccumulationRegister.RevenuesTurnovers</registerRecords>
-  <registerRecords>AccumulationRegister.StockBalance</registerRecords>
-  <postInPrivilegedMode>true</postInPrivilegedMode>
-  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
-  <attributes uuid="5b799080-8aeb-4ddf-a493-e187e470a3dd">
-    <name>Company</name>
-    <synonym>
-      <key>en</key>
-      <value>Company</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Companies</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
+    <value>Key</value>
+   </synonym>
+   <type>
+    <types>UUID</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Ключ</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Anahtar</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Schlüssel</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Clé</value>
+   </synonym>
   </attributes>
-  <attributes uuid="28b47246-0308-42f6-8bb7-80b83f84a7ec">
-    <name>Store</name>
-    <synonym>
-      <key>en</key>
-      <value>Store</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Stores</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
+  <attributes uuid="8e97cbc9-8973-46e4-94c0-f2ef0e05bf61">
+   <name>ItemKey</name>
+   <synonym>
+    <key>en</key>
+    <value>Item key</value>
+   </synonym>
+   <type>
+    <types>CatalogRef.ItemKeys</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <fillChecking>ShowError</fillChecking>
+   <dataHistory>Use</dataHistory>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Характеристика</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Varyant</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Artikelvariante</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Clé d'article</value>
+   </synonym>
   </attributes>
-  <forms uuid="3d46ecbd-c6e0-4c42-9981-ff9c876e9c5b">
-    <name>DocumentForm</name>
-    <synonym>
-      <key>en</key>
-      <value>Document form</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="e6d376a5-fb4e-4c35-bd59-e86bdb3e0074">
-    <name>ListForm</name>
-    <synonym>
-      <key>en</key>
-      <value>List form</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="889fa7f0-d60b-478a-bdac-11ee180d95c6">
-    <name>ChoiceForm</name>
-    <synonym>
-      <key>en</key>
-      <value>Choice form</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <tabularSections uuid="5501341b-0832-4c9b-bf38-9af1afe37b29">
-    <producedTypes>
-      <objectType typeId="19af985c-f741-4c68-bf22-4a3e26c01e2a" valueTypeId="d90256a7-23b8-482a-82a5-f438f67aa2bf"/>
-      <rowType typeId="d6871627-0324-4c9f-87f6-8566cd74c2b3" valueTypeId="2f6d86dd-d719-4d40-a9eb-ee1b128b3863"/>
-    </producedTypes>
-    <name>ItemList</name>
-    <synonym>
-      <key>en</key>
-      <value>Item list</value>
-    </synonym>
-    <attributes uuid="ba101878-8d5c-4568-8c05-8ebd3015c069">
-      <name>Key</name>
-      <synonym>
-        <key>en</key>
-        <value>Key</value>
-      </synonym>
-      <type>
-        <types>UUID</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="8e97cbc9-8973-46e4-94c0-f2ef0e05bf61">
-      <name>ItemKey</name>
-      <synonym>
-        <key>en</key>
-        <value>Item key</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ItemKeys</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="641b1fd8-2294-48cf-85aa-78229dc410ee">
-      <name>Unit</name>
-      <synonym>
-        <key>en</key>
-        <value>Unit</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Units</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="ef977ea8-1fbc-4a1b-8ce5-f7925f1352e3">
-      <name>Quantity</name>
-      <synonym>
-        <key>en</key>
-        <value>Quantity</value>
-      </synonym>
-      <type>
-        <types>DefinedType.typeQuantity</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="775a953a-d0c7-4d0a-bfb6-4aaaf7e1b2de">
-      <name>BusinessUnit</name>
-      <synonym>
-        <key>en</key>
-        <value>Business unit</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.BusinessUnits</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f0a16dde-c0ab-4ec1-9c19-71b2e412d188">
-      <name>RevenueType</name>
-      <synonym>
-        <key>en</key>
-        <value>Revenue type</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ExpenseAndRevenueTypes</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="d8fa1936-9087-4b93-8b20-d712cf23a900">
-      <name>BasisDocument</name>
-      <synonym>
-        <key>en</key>
-        <value>Basis document</value>
-      </synonym>
-      <type>
-        <types>DefinedType.typeStockAdjustmentAsSurplusBasises</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="8e8dcfe0-7a85-49e9-8ee6-94aaf2d046c7">
-    <producedTypes>
-      <objectType typeId="913d6d6e-f1c8-4f37-9f6a-77dadaa4f9b9" valueTypeId="2bf8dfe1-240d-48ae-9dea-70e643d64a7a"/>
-      <rowType typeId="b6569263-dfef-4408-913b-333a34dc52d7" valueTypeId="991b9362-7c3f-46ad-a0df-959ab21c0672"/>
-    </producedTypes>
-    <name>AddAttributes</name>
-    <synonym>
-      <key>en</key>
-      <value>Additional attributes</value>
-    </synonym>
-    <attributes uuid="4779cd99-61ff-45e6-ae87-a54ff8af35eb">
-      <name>Property</name>
-      <synonym>
-        <key>en</key>
-        <value>Property</value>
-      </synonym>
-      <type>
-        <types>ChartOfCharacteristicTypesRef.AddAttributeAndProperty</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-    <attributes uuid="e7e2777b-2bdf-4e50-9f84-51656a8d2066">
-      <name>Value</name>
-      <synonym>
-        <key>en</key>
-        <value>Value</value>
-      </synonym>
-      <type>
-        <types>Characteristic.AddAttributeAndProperty</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-    </attributes>
-  </tabularSections>
-  <commands uuid="4e6fc5c0-6446-4663-b8ed-5b746de8c017">
-    <name>GenerateStockAdjustmentAsSurplus</name>
-    <synonym>
-      <key>en</key>
-      <value>Stock adjustment as surplus</value>
-    </synonym>
-    <group>FormCommandBarCreateBasedOn</group>
-    <commandParameterType>
-      <types>DocumentRef.PhysicalInventory</types>
-    </commandParameterType>
-    <parameterUseMode>Multiple</parameterUseMode>
-    <representation>Auto</representation>
-    <shortcut></shortcut>
-  </commands>
+  <attributes uuid="641b1fd8-2294-48cf-85aa-78229dc410ee">
+   <name>Unit</name>
+   <synonym>
+    <key>en</key>
+    <value>Unit</value>
+   </synonym>
+   <type>
+    <types>CatalogRef.Units</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Ед. изм.</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Birim</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Maßeinheit</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Unité</value>
+   </synonym>
+  </attributes>
+  <attributes uuid="ef977ea8-1fbc-4a1b-8ce5-f7925f1352e3">
+   <name>Quantity</name>
+   <synonym>
+    <key>en</key>
+    <value>Quantity</value>
+   </synonym>
+   <type>
+    <types>DefinedType.typeQuantity</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Количество</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Miktar</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Anzahl</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Quantité</value>
+   </synonym>
+  </attributes>
+  <attributes uuid="775a953a-d0c7-4d0a-bfb6-4aaaf7e1b2de">
+   <name>BusinessUnit</name>
+   <synonym>
+    <key>en</key>
+    <value>Business unit</value>
+   </synonym>
+   <type>
+    <types>CatalogRef.BusinessUnits</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <fillChecking>ShowError</fillChecking>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Подразделение</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Departman</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Abteilung</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Division</value>
+   </synonym>
+  </attributes>
+  <attributes uuid="f0a16dde-c0ab-4ec1-9c19-71b2e412d188">
+   <name>RevenueType</name>
+   <synonym>
+    <key>en</key>
+    <value>Revenue type</value>
+   </synonym>
+   <type>
+    <types>CatalogRef.ExpenseAndRevenueTypes</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <fillChecking>ShowError</fillChecking>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Статья доходов</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Gelir tipi</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Einnahmeart</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Type de revenu</value>
+   </synonym>
+  </attributes>
+  <attributes uuid="d8fa1936-9087-4b93-8b20-d712cf23a900">
+   <name>BasisDocument</name>
+   <synonym>
+    <key>en</key>
+    <value>Basis document</value>
+   </synonym>
+   <type>
+    <types>DefinedType.typeStockAdjustmentAsSurplusBasises</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <fullTextSearch>Use</fullTextSearch>
+   <synonym>
+    <key>ru</key>
+    <value>Основание</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Kaynak evrak</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Basisdokument</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Document de base</value>
+   </synonym>
+  </attributes>
+  <synonym>
+   <key>ru</key>
+   <value>Товары</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Malzeme listesi</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Produktliste</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Liste d'articles</value>
+  </synonym>
+ </tabularSections>
+ <tabularSections uuid="8e8dcfe0-7a85-49e9-8ee6-94aaf2d046c7">
+  <producedTypes>
+   <objectType typeId="913d6d6e-f1c8-4f37-9f6a-77dadaa4f9b9" valueTypeId="2bf8dfe1-240d-48ae-9dea-70e643d64a7a"/>
+   <rowType typeId="b6569263-dfef-4408-913b-333a34dc52d7" valueTypeId="991b9362-7c3f-46ad-a0df-959ab21c0672"/>
+  </producedTypes>
+  <name>AddAttributes</name>
+  <synonym>
+   <key>en</key>
+   <value>Additional attributes</value>
+  </synonym>
+  <attributes uuid="4779cd99-61ff-45e6-ae87-a54ff8af35eb">
+   <name>Property</name>
+   <synonym>
+    <key>en</key>
+    <value>Property</value>
+   </synonym>
+   <type>
+    <types>ChartOfCharacteristicTypesRef.AddAttributeAndProperty</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <synonym>
+    <key>ru</key>
+    <value>Свойство</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Özellik</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Eigenschaft</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Propriété</value>
+   </synonym>
+  </attributes>
+  <attributes uuid="e7e2777b-2bdf-4e50-9f84-51656a8d2066">
+   <name>Value</name>
+   <synonym>
+    <key>en</key>
+    <value>Value</value>
+   </synonym>
+   <type>
+    <types>Characteristic.AddAttributeAndProperty</types>
+   </type>
+   <minValue xsi:type="core:UndefinedValue"/>
+   <maxValue xsi:type="core:UndefinedValue"/>
+   <dataHistory>Use</dataHistory>
+   <synonym>
+    <key>ru</key>
+    <value>Значение</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Değer</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Wert</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Valeur</value>
+   </synonym>
+  </attributes>
+  <synonym>
+   <key>ru</key>
+   <value>Дополнительные реквизиты</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Ek özellikler</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Zusatzattribute</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Attributs supplémentaires</value>
+  </synonym>
+ </tabularSections>
+ <commands uuid="4e6fc5c0-6446-4663-b8ed-5b746de8c017">
+  <name>GenerateStockAdjustmentAsSurplus</name>
+  <synonym>
+   <key>en</key>
+   <value>Stock adjustment as surplus</value>
+  </synonym>
+  <group>FormCommandBarCreateBasedOn</group>
+  <commandParameterType>
+   <types>DocumentRef.PhysicalInventory</types>
+  </commandParameterType>
+  <parameterUseMode>Multiple</parameterUseMode>
+  <representation>Auto</representation>
+  <shortcut/>
+  <synonym>
+   <key>ru</key>
+   <value>Оприходование товаров</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Stok sayım girişi (StockAdjustmentAsSurplus)</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>Aktivierung von Warenüberschüssen</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>Ajustement positif de stock</value>
+  </synonym>
+ </commands>
+ <synonym>
+  <key>ru</key>
+  <value>Оприходование товаров</value>
+ </synonym>
+ <synonym>
+  <key>tr</key>
+  <value>Stok sayım girişi (StockAdjustmentAsSurplus)</value>
+ </synonym>
+ <synonym>
+  <key>de</key>
+  <value>Aktivierung von Warenüberschüssen</value>
+ </synonym>
+ <synonym>
+  <key>fr</key>
+  <value>Ajustement positif de stock</value>
+ </synonym>
+ <listPresentation>
+  <key>ru</key>
+  <value>Оприходования товаров</value>
+ </listPresentation>
+ <listPresentation>
+  <key>tr</key>
+  <value>Stok sayım çıkışları</value>
+ </listPresentation>
+ <listPresentation>
+  <key>de</key>
+  <value>Aktivierung von Warenüberschüssen</value>
+ </listPresentation>
+ <listPresentation>
+  <key>fr</key>
+  <value>Ajustements positifs de stock</value>
+ </listPresentation>
 </mdclass:Document>

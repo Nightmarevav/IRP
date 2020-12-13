@@ -1,4 +1,4 @@
-&AtServer
+﻿&AtServer
 Procedure OnCreateAtServer(Cancel, StandardProcessing)
 	If Parameters.Property("InfoShipmentConfirmations") Then
 		FillShipmentConfirmationTree(Parameters.InfoShipmentConfirmations);

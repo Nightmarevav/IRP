@@ -1,36 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fdcf3371-ff97-48a3-a0a0-eae697a18805">
-  <name>SaasService</name>
+ <name>SaasService</name>
+ <synonym>
+  <key>en</key>
+  <value>Saas service</value>
+ </synonym>
+ <rootURL>saas</rootURL>
+ <reuseSessions>AutoUse</reuseSessions>
+ <sessionMaxAge>20</sessionMaxAge>
+ <urlTemplates uuid="62cb5187-dc99-4787-80b4-caa317b3a728">
+  <name>Saas</name>
   <synonym>
-    <key>en</key>
-    <value>Saas service</value>
+   <key>en</key>
+   <value>Saas</value>
   </synonym>
-  <rootURL>saas</rootURL>
-  <reuseSessions>AutoUse</reuseSessions>
-  <sessionMaxAge>20</sessionMaxAge>
-  <urlTemplates uuid="62cb5187-dc99-4787-80b4-caa317b3a728">
-    <name>Saas</name>
-    <synonym>
-      <key>en</key>
-      <value>Saas</value>
-    </synonym>
-    <template>/*</template>
-    <methods uuid="721b0d2a-beb4-4b28-bc2c-59b8c6ae51ce">
-      <name>CreateArea</name>
-      <synonym>
-        <key>en</key>
-        <value>Create area</value>
-      </synonym>
-      <httpMethod>POST</httpMethod>
-      <handler>SaasCreateArea</handler>
-    </methods>
-    <methods uuid="e08087a6-e544-4da3-999d-d26646b6d71d">
-      <name>CompanyLocalizations</name>
-      <synonym>
-        <key>en</key>
-        <value>Company localization</value>
-      </synonym>
-      <handler>SaasCompanyLocalizations</handler>
-    </methods>
-  </urlTemplates>
+  <template>/*</template>
+  <methods uuid="721b0d2a-beb4-4b28-bc2c-59b8c6ae51ce">
+   <name>CreateArea</name>
+   <synonym>
+    <key>en</key>
+    <value>Create area</value>
+   </synonym>
+   <httpMethod>POST</httpMethod>
+   <handler>SaasCreateArea</handler>
+   <synonym>
+    <key>ru</key>
+    <value>Создание области</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Bölüm oluştur</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Bereich erstellen</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Créer la zone</value>
+   </synonym>
+  </methods>
+  <methods uuid="e08087a6-e544-4da3-999d-d26646b6d71d">
+   <name>CompanyLocalizations</name>
+   <synonym>
+    <key>en</key>
+    <value>Company localization</value>
+   </synonym>
+   <handler>SaasCompanyLocalizations</handler>
+   <synonym>
+    <key>ru</key>
+    <value>Локализация организации</value>
+   </synonym>
+   <synonym>
+    <key>tr</key>
+    <value>Şirket lokalizasyonu</value>
+   </synonym>
+   <synonym>
+    <key>de</key>
+    <value>Organisationslokalisierung</value>
+   </synonym>
+   <synonym>
+    <key>fr</key>
+    <value>Localisation de l'entreprise</value>
+   </synonym>
+  </methods>
+  <synonym>
+   <key>ru</key>
+   <value>SaaS</value>
+  </synonym>
+  <synonym>
+   <key>tr</key>
+   <value>Saas</value>
+  </synonym>
+  <synonym>
+   <key>de</key>
+   <value>SaaS</value>
+  </synonym>
+  <synonym>
+   <key>fr</key>
+   <value>SaaS</value>
+  </synonym>
+ </urlTemplates>
+ <synonym>
+  <key>ru</key>
+  <value>SaaS сервис</value>
+ </synonym>
+ <synonym>
+  <key>tr</key>
+  <value>Saas hizmetleri</value>
+ </synonym>
+ <synonym>
+  <key>de</key>
+  <value>SaaS-Dienst</value>
+ </synonym>
+ <synonym>
+  <key>fr</key>
+  <value>Service SaaS</value>
+ </synonym>
 </mdclass:HTTPService>

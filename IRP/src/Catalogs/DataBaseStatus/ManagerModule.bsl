@@ -1,4 +1,4 @@
-
+﻿
 Function GetOrCreateDataBaseStatusInfo() Export
 	ComputerName = ComputerName();
 	ConnectionString = InfoBaseConnectionString();

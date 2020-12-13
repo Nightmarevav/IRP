@@ -1,8 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcee228c-bc88-48a1-8d29-ce0715bc4da1">
-  <name>UseMultiThreading</name>
-  <synonym>
-    <key>en</key>
-    <value>Use multi threading</value>
-  </synonym>
+ <name>UseMultiThreading</name>
+ <synonym>
+  <key>en</key>
+  <value>Use multi threading</value>
+ </synonym>
+ <synonym>
+  <key>ru</key>
+  <value>Использование многопоточного соединения</value>
+ </synonym>
+ <synonym>
+  <key>tr</key>
+  <value>Birden fazla seans kullanma</value>
+ </synonym>
+ <synonym>
+  <key>de</key>
+  <value>Multithreading verwenden</value>
+ </synonym>
+ <synonym>
+  <key>fr</key>
+  <value>Utiliser le multi-threading</value>
+ </synonym>
 </mdclass:Role>

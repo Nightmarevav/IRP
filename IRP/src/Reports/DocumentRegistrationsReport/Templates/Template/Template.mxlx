@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <document xmlns="http://v8.1c.ru/8.2/data/spreadsheet" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<languageSettings>
 		<currentLanguage>en</currentLanguage>
@@ -30,6 +30,14 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>Register [RegisterType] "[RegisterName]"</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистр [RegisterType] "[RegisterName]"</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kayıt tablosu [RegisterType] "[RegisterName]"</v8:content>
+						</v8:item>
 					</tl>
 				</c>
 			</c>
@@ -54,6 +62,14 @@
 							<v8:lang>en</v8:lang>
 							<v8:content>[Document]</v8:content>
 						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[Document]</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>[Document]</v8:content>
+						</v8:item>
 					</tl>
 				</c>
 			</c>
@@ -70,6 +86,14 @@
 						<v8:item>
 							<v8:lang>en</v8:lang>
 							<v8:content>Document registrations records</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Движения документа</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Evrak kaydeme hareketleri</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -92,6 +116,14 @@
 					<tl>
 						<v8:item>
 							<v8:lang>en</v8:lang>
+							<v8:content>[Document]</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>[Document]</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
 							<v8:content>[Document]</v8:content>
 						</v8:item>
 					</tl>
